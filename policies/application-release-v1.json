@@ -1,0 +1,14 @@
+{
+  "workflow_version": "fixed-workflow-20261024-v2",
+  "default_provider": "gemini",
+  "requested_model": "gemini-3.8-flash",
+  "synthetic_policy": "demo-2025-v1",
+  "max_model_dispatches": 8,
+  "max_draft_attempts": 3,
+  "max_assessment_seconds": 180,
+  "max_output_tokens": 1536,
+  "assessment_budget_usd": "0.12",
+  "release_verification_budget_usd": "1.50",
+  "shared_total_budget_usd": "20",
+  "scope": "Structured synthetic documents, deterministic quota and authorization checks, fixed LLM interpretation with bounded source-contract repair, and human regulatory decisions. No general PDF/OCR or production regulatory certification."
+}

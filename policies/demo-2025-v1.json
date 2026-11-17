@@ -1,0 +1,17 @@
+{
+  "id": "demo-2025-v1",
+  "synthetic": true,
+  "description": "Explicit research policy for synthetic 2025 morphine shipments; not an authoritative statement of national law or universal INCB quotas.",
+  "countries": ["USA", "GBR"],
+  "substances": ["morphine"],
+  "year": 2025,
+  "requirements": [
+    "The exporter and importer must hold active role-appropriate licenses covering the substance.",
+    "Supporting shipment and permit documents must identify the same parties, route, substance, quantity, units, and year as the consignment.",
+    "Import authorization must precede export authorization.",
+    "Both national and prototype global allowances must cover the quantity, including existing reservations.",
+    "All global recommendations must check complete on-chain consumption and reservation history even when the database appears within quota.",
+    "Inconsistent cap declarations, missing evidence, ambiguous document conditions, and unsupported instructions embedded in documents require human review.",
+    "Only human regulators may authorize publication, permit decisions, shipment approval, or quota changes."
+  ]
+}

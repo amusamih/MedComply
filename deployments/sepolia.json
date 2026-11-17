@@ -1,0 +1,19 @@
+{
+  "network": "sepolia",
+  "chain_id": 11155111,
+  "contracts": {
+    "Registration": "0x96f238f7104635CA5FAD4f96aD6e6166Da08f4C6",
+    "Compliance": "0xD6d5fC4eF6C488996de98E9f17302c1c740Ca087",
+    "Shipping": "0xe47eA101907bAba53c02a2d451AaB548A48FFB2C"
+  },
+  "deployment_block": 12018676,
+  "source_sha256": {
+    "Compliance": "87c65f11ac5fa7fbb5db9f2367f7730f5db53d8b8754d9e26a7f46057b6ed807",
+    "Registration": "500291f8c7596e36f05b4c02dd998e909774c5a2c2b28c49be96404e80dc11ac",
+    "Shipping": "81963bb33940a2691d179011ac3e4a29bb0bc1446445e5dd2af7f1a7e168d77d"
+  },
+  "quantity_unit": "ug",
+  "solidity": "0.8.28",
+  "compiler_optimizer_runs": 200,
+  "explorer": "https://eth-sepolia.blockscout.com/address/0xe47eA101907bAba53c02a2d451AaB548A48FFB2C"
+}

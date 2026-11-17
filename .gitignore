@@ -1,0 +1,31 @@
+# Credentials and application state
+.env
+.env.*
+!.env.example
+.local/
+
+# Python environments, caches and build output
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Generated blockchain output and application records
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+artifacts/
+*.log
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

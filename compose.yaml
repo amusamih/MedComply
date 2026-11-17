@@ -1,0 +1,33 @@
+name: medcomply
+services:
+  db:
+    image: postgres:17-alpine@sha256:eee6c6e1b0894fa4fe0075eb054af9fd1cf39a35321c2d4110626cfe506411fb
+    environment:
+      POSTGRES_DB: medcomply
+      POSTGRES_USER: medcomply
+      POSTGRES_PASSWORD_FILE: /run/secrets/database_password
+    secrets: [database_password]
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: ["postgres_data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medcomply -d medcomply"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  ipfs:
+    image: ipfs/kubo:v0.43.1@sha256:b293923d66e490e70ced64df42ea7a6cf7eac2740e3fb29101df18070fa7be48
+    ports: ["127.0.0.1:5001:5001", "127.0.0.1:8081:8080"]
+    environment:
+      IPFS_PROFILE: server
+    volumes: ["ipfs_data:/data/ipfs"]
+    healthcheck:
+      test: ["CMD", "ipfs", "id"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+secrets:
+  database_password:
+    file: ./.local/database-password.txt
+volumes:
+  postgres_data:
+  ipfs_data:
